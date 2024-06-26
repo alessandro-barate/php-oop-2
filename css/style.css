@@ -1,0 +1,43 @@
+/****************
+RESET
+****************/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+ul {
+    width: 50%;
+    padding: 40px 0 40px 0;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+button {
+    background-color: transparent;
+    font-size: 20px;
+    padding: 5px 20px 5px 20px;
+    border: 1px solid grey;
+    border-radius: 25px;
+}
