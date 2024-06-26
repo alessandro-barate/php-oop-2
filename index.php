@@ -64,6 +64,14 @@ class Products
     }
 }
 
+$error = '';
+
+try {
+    $product1 = new Products('Pollo', 15, './..', $dog1,);
+} catch (Exception) {
+    return;
+}
+
 
 ?>
 
@@ -110,9 +118,9 @@ class Products
                     <div class="col">
                         <div class="card">
                             <img src="" alt="">
-                            <p>nome</p>
-                            <p>prezzo</p>
-                            <p>categoria</p>
+                            <p>Nome: <?php echo $product1->getName() ?></p>
+                            <p>Prezzo: <?php echo $product1->getPrice() ?>€</p>
+                            <p>Prodotto per cani fino a <?php echo $dog1->getDogAge() ?> anno e peso fino a <?php echo $dog1->getDogWeight() ?>kg</p>
                         </div>
                     </div>
                     <div class="col">

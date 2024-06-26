@@ -16,6 +16,9 @@ class Toys extends Products
 
     public function setSound(bool $sound): void
     {
+        if (is_null($sound)) {
+            throw new Exception('Indicare se il gioco emette un suono o no');
+        }
         $this->sound = $sound;
     }
 
@@ -23,4 +26,10 @@ class Toys extends Products
     {
         return $this->sound;
     }
+}
+
+try {
+    $toy1 = new Toys(true);
+} catch (Exception $error) {
+    $error = $error->getMessage();
 }

@@ -38,3 +38,9 @@ class Dogs extends Products
         return $this->dogWeight;
     }
 }
+
+try {
+    $dog1 = new Dogs(1, 10);
+} catch (Exception $error) {
+    $error = $error->getMessage();
+}

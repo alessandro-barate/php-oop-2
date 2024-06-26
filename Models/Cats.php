@@ -1,6 +1,6 @@
 <?php
 
-class Dogs extends Products
+class Cats extends Products
 {
     private int $catAge;
     private int $catWeight;
@@ -37,4 +37,10 @@ class Dogs extends Products
     {
         return $this->catWeight;
     }
+}
+
+try {
+    $cat1 = new Cats(1, 3);
+} catch (Exception $error) {
+    $error = $error->getMessage();
 }
