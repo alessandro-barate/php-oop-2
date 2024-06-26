@@ -41,3 +41,12 @@ button {
     border: 1px solid grey;
     border-radius: 25px;
 }
+
+.cards-section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cards-section col {
+    width: calc(100% / 3);
+}

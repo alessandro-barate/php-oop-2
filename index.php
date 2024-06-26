@@ -1,5 +1,7 @@
 <?php
 
+require_once __DIR__ . '/Models/Cats.php';
+require_once __DIR__ . '/Models/Dogs.php';
 class Products
 {
 }
@@ -40,15 +42,38 @@ class Products
     <main>
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <section>
+                <section>
+                    <div class="col">
                         <h1>ALGAPLANET</h1>
-                    </section>
+                    </div>
+                </section>
 
-                    <section>
-
-                    </section>
-                </div>
+                <section class="cards-section d-flex justify-between">
+                    <div class="col">
+                        <div class="card">
+                            <img src="" alt="">
+                            <p>nome</p>
+                            <p>prezzo</p>
+                            <p>categoria</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="" alt="">
+                            <p>nome</p>
+                            <p>prezzo</p>
+                            <p>categoria</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="" alt="">
+                            <p>nome</p>
+                            <p>prezzo</p>
+                            <p>categoria</p>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </main>
