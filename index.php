@@ -1,10 +1,15 @@
 <?php
 
+
+// Importazione file
 require_once __DIR__ . '/Models/Cats.php';
 require_once __DIR__ . '/Models/Dogs.php';
 require_once __DIR__ . '/Models/Food.php';
 require_once __DIR__ . '/Models/Kennels.php';
 require_once __DIR__ . '/Models/Toys.php';
+
+
+// Definizione classe
 class Products
 {
     private string $name;
