@@ -2,16 +2,34 @@
 
 require_once __DIR__ . '/Models/Cats.php';
 require_once __DIR__ . '/Models/Dogs.php';
+require_once __DIR__ . '/Models/Food.php';
+require_once __DIR__ . '/Models/Kennels.php';
+require_once __DIR__ . '/Models/Toys.php';
 class Products
 {
+    private string $name;
     private int $price;
     private string $image;
 
     // Funzione costruttore
-    public function __construct(int $_price, string $_image)
+    public function __construct(string $_name, int $_price, string $_image)
     {
+        $this->name = $_name;
         $this->price = $_price;
         $this->image = $_image;
+    }
+
+
+    // Setter e Getter dell'attributo $name
+
+    public function setName(string $name): void
+    {
+        $this->name = $name;
+    }
+
+    public function getName(): string
+    {
+        return $this->name;
     }
 
 
@@ -52,7 +70,7 @@ class Products
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Products</title>
+    <title>AlgaPlanet Pets Shop</title>
 </head>
 
 <body>
