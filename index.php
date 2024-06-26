@@ -2,8 +2,6 @@
 
 
 // Importazione file
-require_once __DIR__ . '/Models/Cats.php';
-require_once __DIR__ . '/Models/Dogs.php';
 require_once __DIR__ . '/Models/Food.php';
 require_once __DIR__ . '/Models/Kennels.php';
 require_once __DIR__ . '/Models/Toys.php';
@@ -67,7 +65,7 @@ class Products
 $error = '';
 
 try {
-    $product1 = new Products('Pollo', 15, './..', $dog1,);
+    $product1 = new Products($toy1);
 } catch (Exception) {
     return;
 }
@@ -120,7 +118,7 @@ try {
                             <img src="" alt="">
                             <p>Nome: <?php echo $product1->getName() ?></p>
                             <p>Prezzo: <?php echo $product1->getPrice() ?>€</p>
-                            <p>Prodotto per cani fino a <?php echo $dog1->getDogAge() ?> anno e peso fino a <?php echo $dog1->getDogWeight() ?>kg</p>
+                            <p>Prodotto per cani fino a kg</p>
                         </div>
                     </div>
                     <div class="col">

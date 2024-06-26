@@ -6,8 +6,9 @@ class Toys extends Products
 
 
     // Funzione costruttore
-    public function __construct(bool $_sound)
+    public function __construct(string $_name, int $_price, string $_image, bool $_sound)
     {
+        parent::__construct($_name, $_price, $_image);
         $this->sound = $_sound;
     }
 
@@ -29,7 +30,7 @@ class Toys extends Products
 }
 
 try {
-    $toy1 = new Toys(true);
+    $toy1 = new Toys('Pollo', 15, './..', true);
 } catch (Exception $error) {
     $error = $error->getMessage();
 }

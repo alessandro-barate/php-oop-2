@@ -7,7 +7,7 @@ class Kennels extends Products
 
 
     // Funzione costruttore
-    public function __construct(string $_measures, string $_color)
+    public function __construct(string $_name, string $_measures, string $_color)
     {
         $this->measures = $_measures;
         $this->color = $_color;
