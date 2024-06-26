@@ -8,10 +8,36 @@ class Products
     private string $image;
 
     // Funzione costruttore
-    public function __construct(string $_price, int $_image)
+    public function __construct(int $_price, string $_image)
     {
         $this->price = $_price;
         $this->image = $_image;
+    }
+
+
+    // Setter e Getter dell'attributo $price
+
+    public function setPrice(int $price): void
+    {
+        $this->price = $price;
+    }
+
+    public function getPrice(): int
+    {
+        return $this->price;
+    }
+
+
+    // Setter e Getter dell'attributo $image
+
+    public function setImage(string $image): void
+    {
+        $this->image = $image;
+    }
+
+    public function getImage(): int
+    {
+        return $this->image;
     }
 }
 
