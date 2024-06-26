@@ -4,6 +4,15 @@ require_once __DIR__ . '/Models/Cats.php';
 require_once __DIR__ . '/Models/Dogs.php';
 class Products
 {
+    private int $price;
+    private string $image;
+
+    // Funzione costruttore
+    public function __construct(string $_price, int $_image)
+    {
+        $this->price = $_price;
+        $this->image = $_image;
+    }
 }
 
 
