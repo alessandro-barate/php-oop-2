@@ -25,6 +25,7 @@ class Toys extends Products
 
     public function getSound(): bool
     {
+        if ()
         return $this->sound;
     }
 }

@@ -65,7 +65,7 @@ class Products
 $error = '';
 
 try {
-    $product1 = new Products($toy1);
+    $product1 = new Products('', 0, '', $toy1);
 } catch (Exception) {
     return;
 }
@@ -116,9 +116,9 @@ try {
                     <div class="col">
                         <div class="card">
                             <img src="" alt="">
-                            <p>Nome: <?php echo $product1->getName() ?></p>
-                            <p>Prezzo: <?php echo $product1->getPrice() ?>€</p>
-                            <p>Prodotto per cani fino a kg</p>
+                            <p>Nome: <?php echo $toy1->getName() ?></p>
+                            <p>Prezzo: <?php echo $toy1->getPrice() ?>€</p>
+                            <p>Emette suoni: </p>
                         </div>
                     </div>
                     <div class="col">
